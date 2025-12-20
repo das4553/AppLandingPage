@@ -19,7 +19,11 @@
     opacity: 1;
     z-index: 999;
    
+   }
+   p {
+  word-wrap: break-word;
   }
+
 
   .burger {
     display: flex;
@@ -94,8 +98,8 @@
   .AbtDiv p {
     font-family: "Poppins",sans-serif;
     font-weight: 200;
-    font-size: 1em;
-    width: 340px;
+     font-size: clamp(15px, 12px, 3rem);
+     max-width: 370px;
   }
 
   .features h1 {
@@ -166,8 +170,8 @@
     margin-bottom: 10px;
   }
   .t{
-    width: 340px;
-    font-size: 14px;
+    font-size: clamp(12px, 12px, 3rem);
+    max-width: 390px;
     margin-top: 10px;
     font-weight: 300;
   }
