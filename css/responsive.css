@@ -1,0 +1,198 @@
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    opacity: 0;
+    inset: 0;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transform: translateY(-100%);
+    transition: transform 0.7s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    background: white;
+    opacity: 1;
+    z-index: 999;
+   
+  }
+
+  .burger {
+    display: flex;
+  }
+  .two-cols {
+        flex-direction: column;
+    }
+    .contact {
+        flex-direction: column; /* stack form below image */
+        gap: 2em;
+    }
+
+    .two-cols input {
+        flex: 1 1 100%; /* full width on mobile */
+    }
+
+    .contact img {
+        max-width: 100%;
+        height: auto;
+    }
+    .logo{
+      font-size: 1.2rem;
+    }
+    .textDiv h1 {
+     font-size: 2em;
+    }
+    .textDiv p {
+    font-size: 0.9em;
+    width: 360px;
+  }
+  .btn{
+    font-size: 0.9em;
+    padding: 8px 10px;
+  }
+  .ImgSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+   }
+   .ImgSection img {
+    flex: 1 1 calc((100% - 60px) / 4); 
+    width: 100%;
+    height: auto;
+  }
+  .AboutPage{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height:auto; 
+ }
+ .AboutIMG{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+ .AboutIMG img{
+    width: 100%;
+    padding: 20px;
+    margin-left: 3px;
+    height: 100%;
+    object-fit: cover;  
+    object-position: center;
+    display: block;
+ }
+   .AboutPage h1 {
+    font-size: 2em;
+  }
+  .AbtDiv p {
+    font-family: "Poppins",sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    width: 340px;
+  }
+
+  .features h1 {
+     font-size: 2em;
+     }
+   .FeatureDiv h2 {
+     font-size: 1em;
+    }
+  
+   .FeatureDiv div img {
+    width: 35px;
+    height: 35px;
+   }
+   .FeatureDiv p{
+    font-size: 0.9em;
+   }
+   .FeatureDiv{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+    margin-top: 4em;
+    height: auto;
+   }
+   .features{
+    height: auto;
+   }
+
+   .Testimonials h1 {
+    font-size: 2em;   
+   }
+   .ClientsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  gap: 4em;
+}
+
+.ClientsDiv div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 1rem;
+}
+
+.ClientsDiv div p {
+  text-align: center;
+  font-size: 1rem;
+  width: 340px;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+   .FAQ h1 {
+     font-size: 2em;
+  }
+  .FaqDiv h2 {
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .t{
+    width: 340px;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  .FaqDiv  p{
+    font-size: 14px;
+  }
+  .contact-form h1 {
+    font-size: 2em;
+  }  
+  .contact-form div p {
+    font-size: 0.9em;
+  }
+ .s1, .s2 {
+  overflow: hidden;
+ }
+  .FeatureDiv > div {
+  overflow: hidden; 
+ }
+}
+body.menu-open .logo {
+  opacity: 0;          
+  pointer-events: none;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
